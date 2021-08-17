@@ -13,7 +13,7 @@ pwd
 
 echo "#####  Checando status  #####"
 export REPO="testesagemaker"
-export REGION= "us-east-1"
+export EC2= "us-east-1"
 
 aws ecr list-images \
     --repository-name $REPO
