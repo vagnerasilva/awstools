@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-##### em caso de necessidade use chmod 777
+##### em caso de necessidade use chmod +x file
 echo "Seu nome de usuário é:"
 whoami
 echo "#####   #####"
