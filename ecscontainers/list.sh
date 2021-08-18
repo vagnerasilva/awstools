@@ -17,3 +17,6 @@ export EC2= "us-east-1"
 
 aws ecr list-images \
     --repository-name $REPO
+
+
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin

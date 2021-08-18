@@ -12,9 +12,9 @@ pwd
 
 
 echo "#####  Checando status  #####"
-export REPO="testesagemaker"
+export REPO="textsagemaker"
 export REGION= "us-east-1"
 aws ecr create-repository --repository-name $REPO --region $REGION
 
 aws ecr list-images \
-    --repository-name cluster-autoscaler
+    --repository-name $REPO
