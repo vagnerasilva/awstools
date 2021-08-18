@@ -15,8 +15,10 @@ echo "#####  Checando status  #####"
 export REPO="testesagemaker"
 export EC2= "us-east-1"
 
-aws ecr list-images \
-    --repository-name $REPO
 
 
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 080835854471.dkr.ecr.us-east-1.amazonaws.com/textsagemaker
+export URIREPO="080835854471.dkr.ecr.us-east-1.amazonaws.com/reposagemaker"
+
+
+aws ecr get-login-password --region $REGION | docker login --username AWS --password-stdin $URIREPO
+

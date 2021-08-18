@@ -18,3 +18,8 @@ aws ecr create-repository --repository-name $REPO --region $REGION
 
 aws ecr list-images \
     --repository-name $REPO
+
+
+aws ecr create-repository --repository-name textsagemaker --region us-east-1
+
+080835854471.dkr.ecr.us-east-1.amazonaws.com/textsagemaker
