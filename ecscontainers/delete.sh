@@ -18,7 +18,7 @@ aws ecr describe-images --repository-name textsagemaker
 echo "#####  listando para deletar  #####"
 sleep 3
 
-aws ecr delete-repository --repository-name textsagemaker --force
+aws ecr delete-repository --repository-name reposagemaker --force
 
 aws ecr delete-repository --repository-name testesagemaker --force
 testesagemaker
